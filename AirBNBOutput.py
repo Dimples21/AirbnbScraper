@@ -13,7 +13,7 @@ class printProperty:
 
 	def printPropertyType(self):
 		''' Print formatted property type '''
-		print ('Propert Type: \t\t' + self.__propertyInfo.propertyType)
+		print ('Property Type: \t\t' + self.__propertyInfo.propertyType)
 
 	def printBedrooms(self):
 		''' Print formatted bedroom information for property '''

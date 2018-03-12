@@ -13,11 +13,11 @@ try:
 	with open(filepath) as urls:  
 	    for url in urls:
 
-	    # Get property info from url
-		propertyInfo = AirBNBScraper.propertyInfo(url)
+	    	# Get property info from url
+		    propertyInfo = AirBNBScraper.propertyInfo(url)
 
-		# Write all property info to file
-		AirBNBOutput.writeProperty(propertyInfo, folder).writeAll()
+			# Write all property info to file
+		    AirBNBOutput.writeProperty(propertyInfo, folder).writeAll()
 
 except IOError:
 	print('File at \'' + filepath + '\' could not be found')

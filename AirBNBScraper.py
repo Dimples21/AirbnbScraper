@@ -32,9 +32,9 @@ class propertyInfo:
 			if JSONText.get('data-hypernova-key') == "spaspabundlejs":
 				#remove leading and trailing tags and troublesome unicode characters
 				propInfoJSON = JSONText.next.replace('<!--','').replace('-->','').replace( u'\u2018', u"'").replace( u'\u2019', u"'")
-
+				
 		#parse text as json
 		data = json.loads(propInfoJSON)
 
 		#grab object we are interested in
-		return data["bootstrapData"]["reduxData"]["marketplacePdp"]["listingInfo"]["listing"]
+		return data["bootstrapData"]["reduxData"]["homePDP"]["listingInfo"]["listing"]
